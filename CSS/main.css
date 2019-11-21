@@ -1,0 +1,22 @@
+.page-header {
+  display: block;
+  z-index: 10;
+}
+
+.page-header .container {
+  position: relative;
+}
+
+.page-header .container {
+  max-width: 1310px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.header-top {
+  background-color: #f72210;
+  height: 95px;
+  padding: 20px 10px 15px;
+  position: relative;
+  z-index: 2;
+}
