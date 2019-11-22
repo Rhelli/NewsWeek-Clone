@@ -162,3 +162,45 @@ body {
   height: 60px;
   margin: 10px auto 0;
 }
+
+/** Navbar */
+.header-bottom::before {
+  display: block;
+  width: 78px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  content: "";
+  background-color: #f72210;
+  border-left: 12px solid white;
+  border-top: 13px solid #f72210;
+
+}
+
+.header-bottom {
+  width: 100%;
+  padding: 15px 160px 15px 0;
+}
+
+.header-bottom .nav {
+  width: 100%:
+}
+
+.nav-item {
+  flex-grow: 1;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-item:not(.nav-item1) {
+  border-left: 1px solid #d9d9d9;
+}
+
+.nav-item a {
+  display: block;
+  font: bold 21px/24px 'Roboto Condensed', sans-serif;
+  color: #000 !important;
+  margin: 0;
+  padding: 0;
+}
