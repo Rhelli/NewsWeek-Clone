@@ -76,6 +76,10 @@ body {
 }
 
 /** HEADER-----------------------------------------*/
+.header-bottom {
+  border-bottom: 2px solid #f4f5f6;
+}
+
 .page-header {
   display: block;
   max-width: 1903px;
@@ -180,10 +184,47 @@ body {
 .header-bottom {
   width: 100%;
   padding: 15px 160px 15px 0;
+  background-color: white !important;
 }
 
 .header-bottom .nav {
   width: 100%:
+}
+
+.header-bottom .container {
+  position: absolute;
+  top: 0;
+}
+
+.searchNav {
+  position: absolute;
+  width: 60px !important;
+  height: 54px;
+  top: 0;
+  right: 102px;
+  color: rgba(0, 0, 0, 0.55);
+  background-color: white;
+  font-size: 16px;
+  margin: 0;
+  outline: none;
+  padding: 0;
+  border: none;
+  border-radius: 0;
+}
+
+.searchNav:focus {
+  box-shadow: none;
+}
+
+.search-icon {
+  visibility: visible !important;
+  position: absolute;
+  right: 82px;
+  top: 18px;
+  background: url('../Assets/Img/icon-search-glass.svg') center/contain no-repeat white;
+  width: 20px;
+  height: 20px;
+  font-size: 0;
 }
 
 .nav-item {
