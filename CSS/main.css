@@ -6,8 +6,77 @@ body {
   min-width: 320px;
   margin: 0;
   padding: 0;
+  text-align: left;
 }
 
+/** FONTS CLASSES----------------------------------- */
+.titleBold {
+  font: 16px/100% bold "Roboto Condensed", sans-serif;
+  color: #000;
+}
+
+.featureTitle {
+  font: 16px/16px bold "Roboto Condensed", sans-serif;
+  text-transform: uppercase;
+  padding-bottom: 11px;
+  color: rgba(3, 3, 3, 0.4);
+}
+
+.nTitle {
+  font: 19px/19px bold "Roboto Condensed", sans-serif;
+  margin-bottom: 15px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #d9d9d9;
+}
+
+.sectionTitle {
+  font: 22px/22px, "Roboto Condensed", sans-serif;
+  color: #f72210;
+  padding-top: 25px;
+  border-top: 1px solid #d9d9d9;
+}
+
+.featureTag {
+  display: block;
+  font: 17px/16px bold "Roboto Condensed", sans-serif;
+  color: #f72210;
+  padding: 8px 15px 9px;
+  background-color: rgba(255, 255, 255, 0.9);
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: 1;
+}
+
+.bylineBold {
+  font: 16px/100% bold "Roboto Condensed", sans-serif;
+  color: #555;
+}
+
+.cultureTitle {
+  font: 20px/22px "Lora", sans-serif;
+  color: #272727;
+  margin-bottom: 10px;
+}
+
+.cultureText {
+  font: 15px/20px, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: rgba(39, 39, 39, 0.5);
+  margin-bottom: 10px;
+}
+
+.tagsText {
+  font: 13px/20px 300 "Helvetica Neue", Arial, sans-serif;
+  color: #272727;
+}
+
+.paraNorm {
+  font: 16px/100% normal;
+  color: inherit;
+}
+
+
+/** HEADER-----------------------------------------*/
 .page-header {
   display: block;
   max-width: 1903px;
