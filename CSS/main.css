@@ -75,7 +75,6 @@ body {
   color: inherit;
 }
 
-
 /** HEADER-----------------------------------------*/
 .page-header {
   display: block;
@@ -94,10 +93,72 @@ body {
   padding: 0;
 }
 
+/** Date & Sign in Buttons */
 .header-top {
   background-color: #f72210;
   height: 95px;
   padding: 20px 10px 15px;
   position: relative;
   z-index: 2;
+}
+
+.header-date {
+  display: block;
+  margin-left: 10px;
+  font: 16px/34px 'Roboto Condensed', sans-serif;
+  color: white;
+}
+
+.header-buttons {
+  padding: 0;
+}
+
+.header-buttons a {
+  display: inline-block;
+  font: bold 19px/11px 'Roboto Condensed', sans-serif;
+  text-decoration: none;
+  padding: 8px 10px 4px 12px;
+}
+
+.header-buttons a:first-child {
+  color: #fff;
+  margin-bottom: 4px;
+}
+
+.header-buttons a:last-child {
+  color: #f72210;
+  background-color: #fff;
+  border-radius: 0;
+  border: 0;
+
+}
+
+.header-buttons svg {
+  display: inline-block;
+  enable-background: new 0 0 8 14;
+  fill: #f72210;
+  width: 8px;
+  height: 14px;
+  margin-left: 10px;
+  margin-bottom: 4px;
+}
+
+/** NewsWeek Masthead */
+.header-logo {
+  background-color: #f72210;
+  position: absolute;
+  transform: translate(-50%, 0);
+  z-index: 3;
+  top: 0;
+  left: 50%;
+  padding: 10px 15px;
+}
+
+.header-logo svg {
+  display: block;
+  enable-background: 0 0 295.6 60;
+  fill: white;
+  width: 396px;
+  height: 60px;
+  margin: 10px auto 0;
 }
