@@ -364,7 +364,6 @@ header {
   }
   
   .searchNav {
-    width: 175px;
     height: 21px !important;
     margin-left: 5px;
   }
@@ -375,10 +374,19 @@ header {
   }
 
   .nav-item {
-    width: 100%;
-    padding: 5px 15px;
+    max-width: 203px;
+    height: 34px;
     text-align: left;
     border: none !important;
+  }
+
+  .nav-link {
+    padding: 5px 15px !important;
+  }
+
+  .nav-item:hover a {
+    background-color: black !important;
+    color: white !important;
   }
 
   .nav-link::after {
@@ -394,6 +402,10 @@ header {
     margin-top: 6px;
     position: absolute;
     right: 15px;
+  }
+
+  .nav-item:hover .nav-link::after {
+    background-color: #f72210 !important;
   }
 
 
