@@ -1,3 +1,4 @@
+/** Nav Search Slide Out */
 @-webkit-keyframes navSlide-Out {
   0% {
     -webkit-transform: translateY(0);
@@ -114,6 +115,7 @@ header {
   width: 100%;
   display: block;
   z-index: 10;
+  margin: 0;
 }
 
 .page-header .container {
@@ -214,6 +216,11 @@ header {
   color: rgba(255, 255, 255, 0.7);
 }
 
+.iconAnim {
+	-webkit-animation: mobOut 0.6s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	animation: mobOut 0.6s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
 /** Navbar--------------------------------------------- */
 .header-bottom {
   width: 100%;
@@ -233,12 +240,14 @@ header {
   height: 54px;
   margin: 0;
   padding: 0;
+  z-index: 1;
 }
 
 .header-bottom form {
   height: 54px;
   width: 100%;
   margin: 0;
+  z-index: 1;
 }
 
 .searchNav {
@@ -282,6 +291,7 @@ header {
   text-align: center;
   padding: 0;
   margin: 0;
+  z-index: 100;
 }
 
 .navSlideOut {
@@ -301,6 +311,16 @@ header {
   padding: 0;
 }
 
+.nav > li > a:hover,
+.nav > li > a:focus {
+  color: #f72210 !important;
+}
+
+#times {
+  display: none;
+  z-index: 200;
+}
+
 
 /** MEDIA QUERIES ------------------------------ */
 /*? Small devices (landscape phones, 576px and up) --------------------*/
@@ -310,7 +330,7 @@ header {
 }
 
 /*? Medium devices (tablets, 768px and up) ----------------------------*/
-@media (min-width: 768px) {
+@media (max-width: 992px) {
   .page-header,
   .page-header > .container {
     width: 100%;
@@ -329,6 +349,8 @@ header {
   .header-bottom {
     max-width: 220px;
     height: 100vh;
+    position: absolute;
+    right: -220px;
     padding: 0;
     margin: 0;
     overflow-y: scroll;
@@ -418,6 +440,18 @@ header {
     padding: 20px 10px 15px;
   }
 
+  .header-bottom::before {
+    display: block;
+    width: 78px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    content: "";
+    background-color: #f72210;
+    border-left: 12px solid white;
+    border-top: 13px solid #f72210;
+  }
+
 }
 
 /*? Extra large devices (large desktops, 1200px and up)--------------- */
@@ -438,5 +472,6 @@ header {
     border-left: 12px solid white;
     border-top: 13px solid #f72210;
   }
+  
 
 }

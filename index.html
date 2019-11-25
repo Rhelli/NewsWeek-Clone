@@ -32,7 +32,8 @@
 								<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 8 14" style="enable-background:new 0 0 8 14;" xml:space="preserve"><g id="arrow-right"><defs><rect id="SVGID_1_" width="8" height="14"></rect></defs><clipPath id="SVGID_2_"><use xlink:href="#SVGID_1_" style="overflow:visible;"></use></clipPath><g id="Shape_1" class="st0"><g><polygon class="st1" points="8,7 1.1,0 0,1.1 5.9,7 0,12.9 1.1,14 8,7 8,7	"></polygon></g></g></g></svg>
 							</a>
 							<span class="d-lg-none d-xl-none" id="mobNavIcon">
-									<i class="fas fa-bars"></i>
+									<i class="fas fa-bars" id="bars" onclick="mobNavShow()"></i>
+									<i class="fas fa-times" id="times" onclick="mobNavShow()"></i>
 							</span>
 						</div>
 					</div>
@@ -44,14 +45,14 @@
 					</div>
 					<!-- Header Navbar -->
 					<div class="headerNavbar row d-flex justify-content-center d-none d-lg-block d-xl-block">
-						<nav class="header-bottom navbar-text navbar-expand-lg navbar-light bg-light" role="navigation">
+						<nav class="header-bottom navbar-text navbar-expand-lg navbar-light bg-light" id="mobNav" role="navigation">
 							<div class="container" id="navbarContainer">
 								<form class="form-inline form-group" id="navbarForm" action="/search/site/" method="post" accept-charset="utf-8">
 										<label class="search-icon invisible" for="navSearch">Search</label>
 										<input title="Enter the terms you wish to search for." id="navbarSearch" placeholder="Search" type="text" name="navbarSearch" value size="15" maxlength="128" class="searchNav form-text">
 								</form>
 							</div>
-							<ul class="nav navbar-nav">
+							<ul class="nav navbar-nav flex-nowrap">
 								<li class="nav-item nav-item1">
 									<a class="nav-link" href="https://www.newsweek.com/us" title="U.S.">U.S.</a>
 								</li>
@@ -62,7 +63,7 @@
 									<a class="nav-link" href="https://www.newsweek.com/business" title="Business">Business</a>
 								</li>
 								<li class="nav-item">
-									<a class="nav-link" href="https://www.newsweek.com/tech-science" title="Tech-Science">Tech & Science</a>
+									<a class="nav-link text-truncate" href="https://www.newsweek.com/tech-science" title="Tech-Science">Tech & Science</a>
 								</li>
 								<li class="nav-item">
 									<a class="nav-link" href="https://www.newsweek.com/culture" title="Culture">Culture</a>
@@ -97,7 +98,7 @@
 		</div>
 	</footer>
 
-	<script src="JS/navbarSearch.js" type="text/javascript"></script>
+	<script src="JS/navbarAction.js" type="text/javascript"></script>
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
