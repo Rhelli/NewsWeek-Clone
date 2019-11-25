@@ -23,12 +23,16 @@
   }
 }
 
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
 
 body {
   background-color: #f4f5f6;
   color: #333;
   font-family: Arial, Helvetica, sans-serif;
-  overflow-x: hidden;
   min-width: 320px;
   margin: 0;
   padding: 0;
@@ -102,32 +106,28 @@ body {
 }
 
 /** HEADER-----------------------------------------*/
-.header-bottom {
-  border-bottom: 2px solid #f4f5f6;
+header {
+  width: 100%;
 }
 
 .page-header {
+  width: 100%;
   display: block;
-  max-width: 1903px;
   z-index: 10;
 }
 
 .page-header .container {
   position: relative;
-}
-
-.page-header .container {
   max-width: 1310px;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 0;
+  margin: 0 auto !important;
 }
 
 /** Date & Sign in Buttons */
 .header-top {
   background-color: #f72210;
-  height: 95px;
-  padding: 20px 10px 15px;
+  height: 50px;
+  max-width: 1310px;
+  padding: 15px;
   position: relative;
   z-index: 2;
 }
@@ -156,7 +156,7 @@ body {
   margin-right: 2px;
 }
 
-.header-buttons a:last-child {
+.header-buttons a:nth-child(2) {
   color: #f72210;
   background-color: #fff;
   border-radius: 0;
@@ -186,7 +186,6 @@ body {
 }
 
 .header-logo svg {
-  display: block;
   enable-background: 0 0 295.6 60;
   fill: white;
   width: 396px;
@@ -194,24 +193,34 @@ body {
   margin: 10px auto 0;
 }
 
-/** Navbar */
-.header-bottom::before {
-  display: block;
-  width: 78px;
-  position: absolute;
-  top: 0;
-  right: 0;
-  content: "";
-  background-color: #f72210;
-  border-left: 12px solid white;
-  border-top: 13px solid #f72210;
+.mq-masthead svg {
+  enable-background: 0 0 295.6 60;
+  fill: white;
+  width: 132px;
+  height: 20px;
+  margin: 0;
 }
 
+#mobNavIcon {
+  position: relative;
+  bottom: 2px;
+  height: 25px;
+  width: 25px;
+  padding: 0 35px;
+}
+
+#mobNavIcon i {
+  font-size: 28px;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+/** Navbar--------------------------------------------- */
 .header-bottom {
   width: 100%;
   position: relative;
   padding: 15px 160px 15px 0;
   background-color: white !important;
+  border-bottom: 2px solid #f4f5f6;
 }
 
 .header-bottom .nav {
@@ -222,11 +231,14 @@ body {
   position: absolute;
   top: 0;
   height: 54px;
+  margin: 0;
+  padding: 0;
 }
 
 .header-bottom form {
   height: 54px;
   width: 100%;
+  margin: 0;
 }
 
 .searchNav {
@@ -235,7 +247,7 @@ body {
   max-width: 91%;
   height: 54px;
   top: 0;
-  right: 102px;
+  right: 108px;
   color: rgba(0, 0, 0, 0.55);
   background-color: white;
   font-size: 16px;
@@ -257,7 +269,7 @@ body {
 .search-icon {
   visibility: visible !important;
   position: absolute;
-  right: 82px;
+  right: 88px;
   top: 18px;
   background: url('../Assets/Img/icon-search-glass.svg') center/contain no-repeat white;
   width: 20px;
@@ -287,4 +299,132 @@ body {
   color: #000 !important;
   margin: 0;
   padding: 0;
+}
+
+
+/** MEDIA QUERIES ------------------------------ */
+/*? Small devices (landscape phones, 576px and up) --------------------*/
+@media (min-width: 576px) {
+  
+
+}
+
+/*? Medium devices (tablets, 768px and up) ----------------------------*/
+@media (min-width: 768px) {
+  .page-header,
+  .page-header > .container {
+    width: 100%;
+    height: 50px;
+    margin: 0;
+  }
+
+  .headerNavbar {
+    justify-content: flex-end !important;
+  }
+
+  .header-top {
+    padding: 10px;
+  }
+
+  .header-bottom {
+    max-width: 220px;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+    overflow-y: scroll;
+  }
+
+  #navbarContainer {
+    margin: 10px !important;
+  }
+
+  #navbarContainer,
+  .searchNav {
+    height: 20px;
+    width: 100%;
+    position: relative;
+    right: 0;
+    margin: 0;
+  }
+
+  .header-bottom form {
+    height: 100%;
+    width: auto;
+  }
+
+  .search-icon {
+    top: 0;
+    right: 20px;
+    z-index: 200;
+  }
+
+  .header-bottom form input {
+    width: 100% !important;
+    height: auto;
+  }
+  
+  .searchNav {
+    width: 175px;
+    height: 21px !important;
+    margin-left: 5px;
+  }
+
+  .navbar-nav {
+    position: relative;
+    top: 2px;
+  }
+
+  .nav-item {
+    width: 100%;
+    padding: 5px 15px;
+    text-align: left;
+    border: none !important;
+  }
+
+  .nav-link::after {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    width: 8px;
+    height: 14px;
+    -webkit-mask-image: url(https://g.newsweek.com/www/images/icon-arrow-right.svg);
+    mask-image: url(https://g.newsweek.com/www/images/icon-arrow-right.svg);
+    background-color: rgba(0,0,0,.55);
+    margin-left: 10px;
+    margin-top: 6px;
+    position: absolute;
+    right: 15px;
+  }
+
+
+}
+
+/*? Large devices (desktops, 992px and up)---------------------------- */
+@media (min-width: 992px) {
+  .header-top {
+    height: 95px;
+    padding: 20px 10px 15px;
+  }
+
+}
+
+/*? Extra large devices (large desktops, 1200px and up)--------------- */
+@media (min-width: 1200px) {
+  .header-top {
+    height: 95px;
+    padding: 20px 10px 15px;
+  }
+
+  .header-bottom::before {
+    display: block;
+    width: 78px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    content: "";
+    background-color: #f72210;
+    border-left: 12px solid white;
+    border-top: 13px solid #f72210;
+  }
+
 }
