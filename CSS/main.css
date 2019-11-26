@@ -28,6 +28,7 @@ html,
 body {
   height: 100%;
   width: 100%;
+  overflow-x: hidden;
 }
 
 body {
@@ -38,6 +39,7 @@ body {
   margin: 0;
   padding: 0;
   text-align: left;
+  overflow-y: scroll;
 }
 
 /** FONTS CLASSES----------------------------------- */
@@ -136,34 +138,34 @@ header {
 
 .header-date {
   display: block;
-  margin-left: 10px;
+  margin-left: -5px;
   font: 16px/34px 'Roboto Condensed', sans-serif;
   color: white;
 }
 
 .header-buttons {
   padding: 0;
+  margin-right: -5px;
 }
 
 .header-buttons a {
   display: inline-block;
   font: bold 18px/11px 'Roboto Condensed', sans-serif;
   text-decoration: none;
-  padding: 6px 3px;
+  padding: 6px 0 3px 0;
 }
 
 .header-buttons a:first-child {
   color: #fff;
-  padding-left: 12px;
-  padding-right: 12px;
-  margin-bottom: 3px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .header-buttons a:nth-child(2) {
   color: #f72210;
   background-color: #fff;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding-left: 12px;
+  padding-right: 12px;
   border-radius: 0;
   border: 0;
 }
@@ -202,16 +204,16 @@ header {
   fill: white;
   width: 132px;
   height: 20px;
-  margin: 0;
 }
 
 #mobNavIcon {
   position: relative;
-  bottom: 3px;
+  bottom: 1px;
   height: 25px;
   width: 25px;
   padding: 0 35px 0 25px;
   transform: scalex(1.2);
+  cursor: pointer;
 }
 
 #mobNavIcon i {
@@ -233,8 +235,16 @@ header {
   border-bottom: 2px solid #f4f5f6;
 }
 
-.header-bottom .nav {
-  width: 100%:
+.header-bottom > span::before {
+  display: block;
+  width: 78px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  content: "";
+  background-color: #f72210;
+  border-left: 12px solid white;
+  border-top: 13px solid #f72210;
 }
 
 .header-bottom .container {
@@ -259,7 +269,7 @@ header {
   max-width: 91%;
   height: 54px;
   top: 0;
-  right: 108px;
+  right: 102px;
   color: rgba(0, 0, 0, 0.55);
   background-color: white;
   font-size: 16px;
@@ -282,7 +292,7 @@ header {
 .search-icon {
   visibility: visible !important;
   position: absolute;
-  right: 88px;
+  right: 82px;
   top: 18px;
   background: url('../Assets/Img/icon-search-glass.svg') center/contain no-repeat white;
   width: 20px;
@@ -326,9 +336,26 @@ header {
 }
 
 
-* MEDIA QUERIES ------------------------------
-/*? Small devices (landscape phones, 576px and up) --------------------*/
-@media (min-width: 576px) {
+/* MEDIA QUERIES ------------------------------*/
+/*? Small devices ----------------------------------------------------*/
+@media (max-width: 480px) {
+  .mq-masthead {
+    padding-left: 0;
+  }
+  
+  .header-buttons a {
+    font: bold 14px/14px 'Roboto Condensed', sans-serif;
+    padding: 6px 3px !important;
+  }
+
+  .header-buttons svg {
+    display: none;
+  }
+
+  #mobNavIcon {
+    transform: scaleX(1);
+    padding: 0 25px 0 15px;
+  }
 
 }
 
@@ -338,15 +365,10 @@ header {
   .page-header > .container {
     width: 100%;
     height: 50px;
-    margin: 0;
   }
 
   .headerNavbar {
     justify-content: flex-end !important;
-  }
-
-  .header-top {
-    padding: 10px;
   }
 
   .header-bottom {
@@ -440,41 +462,11 @@ header {
 @media (min-width: 992px) {
   .header-top {
     height: 95px;
-    padding: 20px 10px 15px;
-  }
-
-  .header-bottom::before {
-    display: block;
-    width: 78px;
-    position: absolute;
-    top: 0;
-    right: 0;
-    content: "";
-    background-color: #f72210;
-    border-left: 12px solid white;
-    border-top: 13px solid #f72210;
   }
 
 }
 
 /*? Extra large devices (large desktops, 1200px and up)--------------- */
 @media (min-width: 1200px) {
-  .header-top {
-    height: 95px;
-    padding: 20px 10px 15px;
-  }
-
-  .header-bottom::before {
-    display: block;
-    width: 78px;
-    position: absolute;
-    top: 0;
-    right: 0;
-    content: "";
-    background-color: #f72210;
-    border-left: 12px solid white;
-    border-top: 13px solid #f72210;
-  }
-  
 
 }
