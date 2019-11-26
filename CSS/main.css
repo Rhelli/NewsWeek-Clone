@@ -45,7 +45,7 @@ body {
 }
 
 body {
-  background-color: #f4f5f6;
+  background-color: #fff;
   color: #333;
   font-family: Arial, Helvetica, sans-serif;
   min-width: 320px;
@@ -375,7 +375,8 @@ header {
   margin-bottom: 40px;
 }
 
-.subscribe > .featureTitle {
+.subscribe .featureTitle,
+.newsletter .featureTitle {
   color: #f72210;
 }
 
@@ -405,11 +406,65 @@ header {
   left: 80px;
 }
 
-.subInfo h3 {
+.subInfo h3,
+.newsInfo h3 {
   font: bold 20px/28px 'Roboto Condensed', sans-serif;
   color: #000;
   position: relative;
   margin-bottom: 15px;
+}
+
+.subInfo p,
+.newsInfo p {
+  font: 300 15px/21px 'Helvetica Neue Light', Helvetica, Arial, sans-serif;
+  margin-bottom: 25px;
+}
+
+.subInfo a {
+  text-decoration: none;
+}
+
+.subInfo a span,
+.newsInfo a span {
+  font: bold 18px/18px 'Roboto Condensed', sans-serif;
+  display: inline-block;
+  padding: 10px 10px 10px 12px;
+  color: white;
+  margin-bottom: 0;
+  background-color: #f72210;
+}
+
+.subInfo a span:hover,
+.newsInfo a span:hover {
+  background-color: #de1f0e;
+}
+
+.subInfo a svg,
+.newsInfo a svg {
+  display: inline-block;
+  enable-background: new 0 0 8 14;
+  fill: white;
+  width: 8px;
+  height: 14px;
+  margin-left: 5px;
+  margin-bottom: 4px;
+}
+
+.newsletter {
+  margin-bottom: 40px;
+}
+
+.newsletter .img-fluid {
+  background: url('../Assets/Img/newsletter.png') center center / cover no-repeat;
+  height: 160px;
+  flex: none;
+}
+
+.newsInfo {
+  text-align: center;
+  border: 1px solid #ebebeb;
+  padding: 20px;
+  flex: 1;
 }
 
 
