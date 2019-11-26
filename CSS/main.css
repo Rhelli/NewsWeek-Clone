@@ -149,21 +149,23 @@ header {
   display: inline-block;
   font: bold 18px/11px 'Roboto Condensed', sans-serif;
   text-decoration: none;
-  padding: 6px 10px 2px 12px;
+  padding: 6px 3px;
 }
 
 .header-buttons a:first-child {
   color: #fff;
-  margin-bottom: 4px;
-  margin-right: 2px;
+  padding-left: 12px;
+  padding-right: 12px;
+  margin-bottom: 3px;
 }
 
 .header-buttons a:nth-child(2) {
   color: #f72210;
   background-color: #fff;
+  padding-left: 10px;
+  padding-right: 10px;
   border-radius: 0;
   border: 0;
-
 }
 
 .header-buttons svg {
@@ -205,15 +207,16 @@ header {
 
 #mobNavIcon {
   position: relative;
-  bottom: 2px;
+  bottom: 3px;
   height: 25px;
   width: 25px;
-  padding: 0 35px;
+  padding: 0 35px 0 25px;
+  transform: scalex(1.2);
 }
 
 #mobNavIcon i {
   font-size: 28px;
-  color: rgba(255, 255, 255, 0.7);
+  color: rgba(255, 255, 255, 0.55);
 }
 
 .iconAnim {
@@ -265,6 +268,7 @@ header {
   padding: 0;
   border: none;
   border-radius: 0;
+  z-index: 10;
 }
 
 .searchNav:focus::placeholder {
@@ -291,7 +295,7 @@ header {
   text-align: center;
   padding: 0;
   margin: 0;
-  z-index: 100;
+  z-index: 9;
 }
 
 .navSlideOut {
@@ -322,10 +326,9 @@ header {
 }
 
 
-/** MEDIA QUERIES ------------------------------ */
+* MEDIA QUERIES ------------------------------
 /*? Small devices (landscape phones, 576px and up) --------------------*/
 @media (min-width: 576px) {
-  
 
 }
 
