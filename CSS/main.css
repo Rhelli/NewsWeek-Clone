@@ -623,6 +623,7 @@ header {
     padding: 0;
     margin: 0;
     overflow-y: scroll;
+    z-index: 999;
   }
 
   #navbarContainer {
