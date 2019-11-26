@@ -1,0 +1,472 @@
+/** Nav Search Slide Out */
+@-webkit-keyframes navSlide-Out {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translateY(-1000px);
+            transform: translateY(-1000px);
+    opacity: 0;
+  }
+}
+@keyframes navSlide-Out {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translateY(-1000px);
+            transform: translateY(-1000px);
+    opacity: 0;
+  }
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  background-color: #f4f5f6;
+  color: #333;
+  font-family: Arial, Helvetica, sans-serif;
+  min-width: 320px;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+  overflow-y: scroll;
+}
+
+/** FONTS CLASSES----------------------------------- */
+.titleBold {
+  font: 16px/100% bold "Roboto Condensed", sans-serif;
+  color: #000;
+}
+
+.featureTitle {
+  font: 16px/16px bold "Roboto Condensed", sans-serif;
+  text-transform: uppercase;
+  padding-bottom: 11px;
+  color: rgba(3, 3, 3, 0.4);
+}
+
+.nTitle {
+  font: 19px/19px bold "Roboto Condensed", sans-serif;
+  margin-bottom: 15px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #d9d9d9;
+}
+
+.sectionTitle {
+  font: 22px/22px, "Roboto Condensed", sans-serif;
+  color: #f72210;
+  padding-top: 25px;
+  border-top: 1px solid #d9d9d9;
+}
+
+.featureTag {
+  display: block;
+  font: 17px/16px bold "Roboto Condensed", sans-serif;
+  color: #f72210;
+  padding: 8px 15px 9px;
+  background-color: rgba(255, 255, 255, 0.9);
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: 1;
+}
+
+.bylineBold {
+  font: 16px/100% bold "Roboto Condensed", sans-serif;
+  color: #555;
+}
+
+.cultureTitle {
+  font: 20px/22px "Lora", sans-serif;
+  color: #272727;
+  margin-bottom: 10px;
+}
+
+.cultureText {
+  font: 15px/20px, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: rgba(39, 39, 39, 0.5);
+  margin-bottom: 10px;
+}
+
+.tagsText {
+  font: 13px/20px 300 "Helvetica Neue", Arial, sans-serif;
+  color: #272727;
+}
+
+.paraNorm {
+  font: 16px/100% normal;
+  color: inherit;
+}
+
+/** HEADER-----------------------------------------*/
+header {
+  width: 100%;
+}
+
+.page-header {
+  width: 100%;
+  display: block;
+  z-index: 10;
+  margin: 0;
+}
+
+.page-header .container {
+  position: relative;
+  max-width: 1310px;
+  margin: 0 auto !important;
+}
+
+/** Date & Sign in Buttons */
+.header-top {
+  background-color: #f72210;
+  height: 50px;
+  max-width: 1310px;
+  padding: 15px;
+  position: relative;
+  z-index: 2;
+}
+
+.header-date {
+  display: block;
+  margin-left: -5px;
+  font: 16px/34px 'Roboto Condensed', sans-serif;
+  color: white;
+}
+
+.header-buttons {
+  padding: 0;
+  margin-right: -5px;
+}
+
+.header-buttons a {
+  display: inline-block;
+  font: bold 18px/11px 'Roboto Condensed', sans-serif;
+  text-decoration: none;
+  padding: 6px 0 3px 0;
+}
+
+.header-buttons a:first-child {
+  color: #fff;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.header-buttons a:nth-child(2) {
+  color: #f72210;
+  background-color: #fff;
+  padding-left: 12px;
+  padding-right: 12px;
+  border-radius: 0;
+  border: 0;
+}
+
+.header-buttons svg {
+  display: inline-block;
+  enable-background: new 0 0 8 14;
+  fill: #f72210;
+  width: 8px;
+  height: 14px;
+  margin-left: 10px;
+  margin-bottom: 4px;
+}
+
+/** NewsWeek Masthead */
+.header-logo {
+  background-color: #f72210;
+  position: absolute;
+  transform: translate(-50%, 0);
+  z-index: 3;
+  top: 0;
+  left: 50%;
+  padding: 10px 15px;
+}
+
+.header-logo svg {
+  enable-background: 0 0 295.6 60;
+  fill: white;
+  width: 396px;
+  height: 60px;
+  margin: 10px auto 0;
+}
+
+.mq-masthead svg {
+  enable-background: 0 0 295.6 60;
+  fill: white;
+  width: 132px;
+  height: 20px;
+}
+
+#mobNavIcon {
+  position: relative;
+  bottom: 1px;
+  height: 25px;
+  width: 25px;
+  padding: 0 35px 0 25px;
+  transform: scalex(1.2);
+  cursor: pointer;
+}
+
+#mobNavIcon i {
+  font-size: 28px;
+  color: rgba(255, 255, 255, 0.55);
+}
+
+.iconAnim {
+	-webkit-animation: mobOut 0.6s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	animation: mobOut 0.6s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+/** Navbar--------------------------------------------- */
+.header-bottom {
+  width: 100%;
+  position: relative;
+  padding: 15px 160px 15px 0;
+  background-color: white !important;
+  border-bottom: 2px solid #f4f5f6;
+}
+
+.header-bottom > span::before {
+  display: block;
+  width: 78px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  content: "";
+  background-color: #f72210;
+  border-left: 12px solid white;
+  border-top: 13px solid #f72210;
+}
+
+.header-bottom .container {
+  position: absolute;
+  top: 0;
+  height: 54px;
+  margin: 0;
+  padding: 0;
+  z-index: 1;
+}
+
+.header-bottom form {
+  height: 54px;
+  width: 100%;
+  margin: 0;
+  z-index: 1;
+}
+
+.searchNav {
+  position: absolute;
+  width: 60px;
+  max-width: 91%;
+  height: 54px;
+  top: 0;
+  right: 102px;
+  color: rgba(0, 0, 0, 0.55);
+  background-color: white;
+  font-size: 16px;
+  margin: 0;
+  outline: none;
+  padding: 0;
+  border: none;
+  border-radius: 0;
+  z-index: 10;
+}
+
+.searchNav:focus::placeholder {
+  color: transparent;
+}
+
+.searchNav:focus {
+  box-shadow: none;
+}
+
+.search-icon {
+  visibility: visible !important;
+  position: absolute;
+  right: 82px;
+  top: 18px;
+  background: url('../Assets/Img/icon-search-glass.svg') center/contain no-repeat white;
+  width: 20px;
+  height: 20px;
+  font-size: 0;
+}
+
+.nav-item {
+  flex-grow: 1;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  z-index: 9;
+}
+
+.navSlideOut {
+	-webkit-animation: slide-out-left 0.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+	animation: slide-out-left 0.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+}
+
+.nav-item:not(.nav-item1) {
+  border-left: 1px solid #d9d9d9;
+}
+
+.nav-item a {
+  display: block;
+  font: bold 21px/24px 'Roboto Condensed', sans-serif;
+  color: #000 !important;
+  margin: 0;
+  padding: 0;
+}
+
+.nav > li > a:hover,
+.nav > li > a:focus {
+  color: #f72210 !important;
+}
+
+#times {
+  display: none;
+  z-index: 200;
+}
+
+
+/* MEDIA QUERIES ------------------------------*/
+/*? Small devices ----------------------------------------------------*/
+@media (max-width: 480px) {
+  .mq-masthead {
+    padding-left: 0;
+  }
+  
+  .header-buttons a {
+    font: bold 14px/14px 'Roboto Condensed', sans-serif;
+    padding: 6px 3px !important;
+  }
+
+  .header-buttons svg {
+    display: none;
+  }
+
+  #mobNavIcon {
+    transform: scaleX(1);
+    padding: 0 25px 0 15px;
+  }
+
+}
+
+/*? Medium devices (tablets, 768px and up) ----------------------------*/
+@media (max-width: 992px) {
+  .page-header,
+  .page-header > .container {
+    width: 100%;
+    height: 50px;
+  }
+
+  .headerNavbar {
+    justify-content: flex-end !important;
+  }
+
+  .header-bottom {
+    max-width: 220px;
+    height: 100vh;
+    position: absolute;
+    right: -220px;
+    padding: 0;
+    margin: 0;
+    overflow-y: scroll;
+  }
+
+  #navbarContainer {
+    margin: 10px !important;
+  }
+
+  #navbarContainer,
+  .searchNav {
+    height: 20px;
+    width: 100%;
+    position: relative;
+    right: 0;
+    margin: 0;
+  }
+
+  .header-bottom form {
+    height: 100%;
+    width: auto;
+  }
+
+  .search-icon {
+    top: 0;
+    right: 20px;
+    z-index: 200;
+  }
+
+  .header-bottom form input {
+    width: 100% !important;
+    height: auto;
+  }
+  
+  .searchNav {
+    height: 21px !important;
+    margin-left: 5px;
+  }
+
+  .navbar-nav {
+    position: relative;
+    top: 2px;
+  }
+
+  .nav-item {
+    max-width: 203px;
+    height: 34px;
+    text-align: left;
+    border: none !important;
+  }
+
+  .nav-link {
+    padding: 5px 15px !important;
+  }
+
+  .nav-item:hover a {
+    background-color: black !important;
+    color: white !important;
+  }
+
+  .nav-link::after {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    width: 8px;
+    height: 14px;
+    -webkit-mask-image: url(https://g.newsweek.com/www/images/icon-arrow-right.svg);
+    mask-image: url(https://g.newsweek.com/www/images/icon-arrow-right.svg);
+    background-color: rgba(0,0,0,.55);
+    margin-left: 10px;
+    margin-top: 6px;
+    position: absolute;
+    right: 15px;
+  }
+
+  .nav-item:hover .nav-link::after {
+    background-color: #f72210 !important;
+  }
+
+
+}
+
+/*? Large devices (desktops, 992px and up)---------------------------- */
+@media (min-width: 992px) {
+  .header-top {
+    height: 95px;
+  }
+
+}
+
+/*? Extra large devices (large desktops, 1200px and up)--------------- */
+@media (min-width: 1200px) {
+
+}
