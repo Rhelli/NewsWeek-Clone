@@ -350,6 +350,7 @@ header {
 
 /** FOOTER ------------------------------------------------- */
 .page-footer {
+  max-width: 1310px;
   border-top: 2px solid #f4f5f6;
   background-color: white;
   padding-top: 30px;
@@ -427,6 +428,11 @@ header {
 .footer-editions label {
   margin-top: 6px;
   margin-right: 15px;
+  margin-bottom: 0;
+}
+
+.menu {
+  margin: 0;
 }
 
 .menu li {
@@ -464,8 +470,17 @@ header {
   }
 
 }
-
 /*? Medium devices (tablets, 768px and up) ----------------------------*/
+@media(min-width: 768px) {
+  .menu li:not(.liLast) {
+    border-right: 1px solid #d9d9d9;
+    padding-right: 10px;
+    margin-right: 10px;
+  }
+}
+
+
+/*? Medium devices (tablets, 992px and under) ----------------------------*/
 @media (max-width: 992px) {
   .page-header,
   .page-header > .container {
