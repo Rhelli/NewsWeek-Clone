@@ -31,6 +31,19 @@ body {
   overflow-x: hidden;
 }
 
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  border: 0 none;
+  list-style: none outside none;
+  outline: 0 none;
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
 body {
   background-color: #f4f5f6;
   color: #333;
@@ -335,6 +348,105 @@ header {
   z-index: 200;
 }
 
+/** FOOTER ------------------------------------------------- */
+.page-footer {
+  max-width: 1310px;
+  border-top: 2px solid #f4f5f6;
+  background-color: white;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.footer-top > div a svg {
+  display: block;
+  width: 236px;
+  height: 36px;
+  margin-right: 15px;
+  margin-bottom: 12px;
+  fill: #f72210;
+  enable-background: new 0 0 395.6 60;
+}
+
+.copyright {
+  font: normal 12px/12px Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+  color: #666;
+  margin-bottom: 12px; 
+}
+
+.footer-social {
+  margin-bottom: 12px;
+}
+
+.footer-social li {
+  margin-left: 15px;
+}
+
+.footer-social li:first-child {
+  margin-left: 0;
+}
+
+.footer-social li a {
+  line-height: 24px;
+  font-size: 23px;
+  vertical-align: top;
+  text-align: center;
+  display: block;
+  text-decoration: none;
+  color: #666;
+  cursor: pointer;
+}
+
+#fS1:hover {
+  color: #3b5998;
+}
+
+#fS2:hover {
+  color: #1da1f2;
+}
+
+#fS3:hover {
+  color: #405de6;
+}
+
+#fS4:hover {
+  color: #35465c;
+}
+
+#fS5:hover {
+  color: #0077b5;
+}
+
+.footer-links {
+  border-top: 1px solid #d9d9d9;
+  padding-top: 6px;
+  font-size: 14px;
+  line-height: 15px;
+  color: #666;
+}
+
+.footer-editions label {
+  margin-top: 6px;
+  margin-right: 15px;
+  margin-bottom: 0;
+}
+
+.menu {
+  margin: 0;
+}
+
+.menu li {
+  display: inline-block;
+  padding-right: 20px;
+  margin: 6px 0;
+  cursor: pointer;
+}
+
+.menu li a {
+  display: block;
+  text-decoration: none;
+  color: #666;
+}
 
 /* MEDIA QUERIES ------------------------------*/
 /*? Small devices ----------------------------------------------------*/
@@ -358,8 +470,17 @@ header {
   }
 
 }
-
 /*? Medium devices (tablets, 768px and up) ----------------------------*/
+@media(min-width: 768px) {
+  .menu li:not(.liLast) {
+    border-right: 1px solid #d9d9d9;
+    padding-right: 10px;
+    margin-right: 10px;
+  }
+}
+
+
+/*? Medium devices (tablets, 992px and under) ----------------------------*/
 @media (max-width: 992px) {
   .page-header,
   .page-header > .container {
