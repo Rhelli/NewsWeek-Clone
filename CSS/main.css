@@ -356,19 +356,18 @@ header {
   height: 2px;
   position: absolute;
   top: 0;
-  left: -15px;
-  right: -15px;
 }
 
 .subscribe-block {
   position: relative;
   padding-top: 40px;
+  padding-left: 0;
+  padding-right: 0;
+  max-width: 1310px;
 }
 
 .subscribe-block > div {
   position: relative;
-  padding-left: 15px;
-  padding-right: 15px;
 }
 
 .subscribe {
