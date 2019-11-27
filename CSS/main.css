@@ -85,6 +85,7 @@ body {
   font: bold 22px/22px "Roboto Condensed", sans-serif;
   color: #f72210;
   padding-top: 25px;
+  padding-bottom: 11px;
   border-top: 1px solid #d9d9d9;
 }
 
@@ -96,16 +97,19 @@ body {
   margin-bottom: 25px;
 }
 
+.featureArtTitle a:hover {
+  text-decoration: underline;
+  text-decoration-color: #f72210;
+}
+
 .featureArtText {
   font: bold 17px/21px 'Roboto Condensed', sans-serif;
   color: #000;
   flex: 1;
 }
 
-.subfeature .subImages {
-  flex: none;
-  width: 135px;
-  margin-right: 15px;
+.featureArtText a:hover {
+  color: #f72210;
 }
 
 .featureTag {
@@ -385,8 +389,29 @@ header {
   color: inherit;
 }
 
-.feature-section .row {
+.subfeature li {
+  border-top: 1px solid #ddd;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
 
+.subfeature li:first-child {
+  border-top: 0;
+  padding: 0;
+}
+
+.mainImage a img {
+  display: block;
+  background-color: #f0f0f0;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.subImages {
+  flex: none;
+  width: 135px;
+  margin-right: 15px;
 }
 
 
