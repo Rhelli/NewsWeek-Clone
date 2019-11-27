@@ -55,6 +55,12 @@ body {
   overflow-y: scroll;
 }
 
+.spacer {
+  height: 1000px;
+  width: 100%;
+  background: slateblue;
+}
+
 /** FONTS CLASSES----------------------------------- */
 .titleBold {
   font: bold 16px/100% "Roboto Condensed", sans-serif;
@@ -361,8 +367,8 @@ header {
 .subscribe-block {
   position: relative;
   padding-top: 40px;
-  padding-left: 0;
-  padding-right: 0;
+  padding-left: 15px;
+  padding-right: 15px;
   max-width: 1310px;
 }
 
@@ -450,25 +456,23 @@ header {
 }
 
 .newsletter {
+  height: 100%;
   margin-bottom: 40px;
 }
 
 .newsletter .img-fluid {
   background: url('../Assets/Img/newsletter.png') center center / cover no-repeat;
-  height: 160px;
+  min-width: 191px;
+  min-height: 160px; 
   flex: none;
 }
 
 .newsInfo {
-  text-align: center;
   border: 1px solid #ebebeb;
-  padding: 20px;
+  padding: 30px;
   flex: 1;
+  text-align: center;
 }
-
-
-
-
 
 /** FOOTER ------------------------------------------------- */
 .page-footer {
@@ -598,6 +602,24 @@ header {
     border-right: 1px solid #d9d9d9;
     padding-right: 10px;
     margin-right: 10px;
+  }
+
+  .subContent {
+    padding: 30px;
+  }
+
+  .subInfo {
+    padding-left: 40px !important;
+  }
+
+  .subInfo h3,
+  .newsletter h3 {
+    font-size: 24px;
+    line-height: 28px;
+  }
+
+  .newsInfo a span {
+    margin-bottom: 40px;
   }
 }
 
