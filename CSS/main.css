@@ -734,5 +734,13 @@ header {
 
 /*? Extra large devices (large desktops, 1200px and up)--------------- */
 @media (min-width: 1200px) {
+  .newsInfo a span {
+    margin-bottom: 0;
+  }
+
+  .newsletter .img-fluid {
+    max-height: 322px;
+    min-width: 170px;
+  }
 
 }
