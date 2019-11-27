@@ -460,10 +460,14 @@ header {
   margin-bottom: 40px;
 }
 
+.featureTitle > div {
+  width: 100%;
+}
+
 .newsletter .img-fluid {
-  background: url('../Assets/Img/newsletter.png') center center / cover no-repeat;
-  min-width: 191px;
-  min-height: 160px; 
+  background: url('../Assets/Img/newsletter.png') center center/cover no-repeat;
+  height: 100%;
+  min-height: 160px;
   flex: none;
 }
 
@@ -618,8 +622,9 @@ header {
     line-height: 28px;
   }
 
-  .newsInfo a span {
-    margin-bottom: 40px;
+  .newsletter .img-fluid {
+    min-width: 191px;
+    height: auto;
   }
 }
 
@@ -730,6 +735,13 @@ header {
     height: 95px;
   }
 
+  .newsletter .img-fluid {
+    min-height: 362px;
+    height: 100%;
+    width: 48%;
+    max-width: 191px;
+  }
+
 }
 
 /*? Extra large devices (large desktops, 1200px and up)--------------- */
@@ -739,8 +751,10 @@ header {
   }
 
   .newsletter .img-fluid {
-    max-height: 322px;
-    min-width: 170px;
+    min-height: 322px;
+    height: 100%;
+    width: 48%;
+    max-width: 170px;
   }
 
 }
