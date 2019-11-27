@@ -56,7 +56,7 @@ body {
 }
 
 .spacer {
-  height: 1000px;
+  height: 10px;
   width: 100%;
   background: slateblue;
 }
@@ -82,10 +82,30 @@ body {
 }
 
 .sectionTitle {
-  font: 22px/22px, "Roboto Condensed", sans-serif;
+  font: bold 22px/22px "Roboto Condensed", sans-serif;
   color: #f72210;
   padding-top: 25px;
   border-top: 1px solid #d9d9d9;
+}
+
+.featureArtTitle {
+  font: bold 18px/18px 'Roboto Condensed', sans-serif;
+  color: #000;
+  position: relative;
+  margin-top: 10px;
+  margin-bottom: 25px;
+}
+
+.featureArtText {
+  font: bold 17px/21px 'Roboto Condensed', sans-serif;
+  color: #000;
+  flex: 1;
+}
+
+.subfeature .subImages {
+  flex: none;
+  width: 135px;
+  margin-right: 15px;
 }
 
 .featureTag {
@@ -353,6 +373,22 @@ header {
   display: none;
   z-index: 200;
 }
+
+/** FEATURE SECTION -------------------------------------------*/
+.feature-section .featureTitle {
+  padding-top: 25px;
+  border-top: 1px solid #d9d9d9;
+}
+
+.feature-section a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.feature-section .row {
+
+}
+
 
 /** SUBSCRIBE BLOCK ----------------------------------------- */
 .subscribe-block::before {
