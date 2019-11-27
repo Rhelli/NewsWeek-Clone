@@ -86,6 +86,7 @@ body {
   color: #f72210;
   padding-top: 25px;
   padding-bottom: 11px;
+  padding-left: 15px;
   border-top: 1px solid #d9d9d9;
 }
 
@@ -379,6 +380,11 @@ header {
 }
 
 /** FEATURE SECTION -------------------------------------------*/
+.sectionPicks {
+  margin: 0;
+  padding: 0;
+}
+
 .feature-section .featureTitle {
   padding-top: 25px;
   border-top: 1px solid #d9d9d9;
@@ -387,6 +393,10 @@ header {
 .feature-section a {
   text-decoration: none;
   color: inherit;
+}
+
+.subfeature {
+  margin-bottom: 30px;
 }
 
 .subfeature li {
@@ -412,6 +422,11 @@ header {
   flex: none;
   width: 135px;
   margin-right: 15px;
+}
+
+.subImages a {
+  display: block;
+  height: auto;
 }
 
 
@@ -659,10 +674,23 @@ header {
     transform: scaleX(1);
     padding: 0 25px 0 15px;
   }
-
 }
+
+/*? Medium devices (tablets, 576px and up) ----------------------------*/
+@media(max-width: 767px) and (min-width: 481px) {
+  .subImages {
+    width: 258px;
+  }
+}
+
+
 /*? Medium devices (tablets, 768px and up) ----------------------------*/
 @media(min-width: 768px) {
+  .featureArtTitle {
+    font-size: 22px;
+    line-height: 22px;
+  }
+  
   .menu li:not(.liLast) {
     border-right: 1px solid #d9d9d9;
     padding-right: 10px;
