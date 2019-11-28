@@ -389,6 +389,59 @@ header {
   padding-top: 10px;
 }
 
+.magazine a {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+
+.mag-preview {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.category {
+  display: block;
+  font: bold 16px/33px 'Roboto Condensed', sans-serif;
+  color: #f72210;
+  padding: 0 10px;
+  background-color: rgba(255, 255, 255, 0.9);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.see-all {
+  margin: 0;
+  color: #000;
+  background-color: #f3f4f5;
+  padding: 10px 10px 10px 12px;
+}
+
+.see-all:hover {
+  background-color: #dbdcdd;
+}
+
+.top-section {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.top-section > .nTitle {
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+
+.n-icon {
+  flex: none;
+  width: 29px;
+  height: 28px;
+  background: url('../Assets/Img/n-logo.svg') center/contain no-repeat #f72210;
+  margin-right: 10px;
+}
+
+
 /** FEATURE SECTION -------------------------------------------*/
 .sectionPicks {
   margin: 0;
