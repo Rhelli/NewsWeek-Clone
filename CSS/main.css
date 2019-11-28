@@ -423,13 +423,22 @@ header {
 
 .see-all {
   margin: 0;
-  color: #000;
+  color: #000 !important;
   background-color: #f3f4f5;
   padding: 10px 10px 10px 12px;
 }
 
 .see-all:hover {
   background-color: #dbdcdd;
+}
+
+.mag-arrow {
+  position: relative;
+  bottom: 2px;
+  width: 8px;
+  height: 14px;
+  margin-left: 10px;
+  fill: black;
 }
 
 .top-section {
@@ -476,6 +485,10 @@ header {
 .magazine .featureTitle a:hover {
   text-decoration: underline;
   text-decoration-color: #f72210;
+}
+
+.big-shot-wrapper .wrap {
+  margin-bottom: 10px;
 }
 
 .cover-mask {
@@ -803,6 +816,11 @@ header {
   .featureArtTitle {
     font-size: 22px;
     line-height: 22px;
+  }
+
+  .magazine .featureArtTitle {
+    font-size: 18px;
+    line-height: 18px;
   }
   
   .menu li:not(.liLast) {
