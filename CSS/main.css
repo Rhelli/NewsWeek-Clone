@@ -503,11 +503,11 @@ header {
 .subscribe-block {
   position: relative;
   padding-top: 40px;
+  border-top: 2px solid #f3f4f5;
 }
 
 .subscribe-block > div {
   position: relative;
-  border-top: 2px solid #f3f4f5;
 }
 
 .subscribe,
@@ -727,12 +727,19 @@ header {
     transform: scaleX(1);
     padding: 0 25px 0 15px;
   }
+
+  .newsletter .images {
+    height: 161px;
+  }
 }
 
 /*? Medium devices (tablets, 576px and up) ----------------------------*/
 @media(max-width: 767px) and (min-width: 481px) {
   .subImages {
     width: 258px;
+  }
+  .newsletter .images {
+    height: 161px;
   }
 }
 
