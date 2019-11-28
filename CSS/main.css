@@ -105,7 +105,8 @@ body {
   margin-bottom: 25px;
 }
 
-.featureArtTitle a:hover {
+.featureArtTitle a:hover,
+.articleLink a:hover {
   text-decoration: underline;
   text-decoration-color: #f72210;
 }
@@ -398,25 +399,12 @@ header {
 
 .magazine a {
   display: block;
-  text-decoration: none;
-  color: inherit;
+  color: #000;
 }
 
 .mag-preview {
   padding-left: 15px;
   padding-right: 15px;
-}
-
-.category {
-  display: block;
-  font: bold 16px/33px 'Roboto Condensed', sans-serif;
-  color: #f72210;
-  padding: 0 10px;
-  background-color: rgba(255, 255, 255, 0.9);
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  z-index: 1;
 }
 
 .see-all {
@@ -446,6 +434,30 @@ header {
   height: 28px;
   background: url('../Assets/Img/n-logo.svg') center/contain no-repeat #f72210;
   margin-right: 10px;
+}
+
+.category {
+  font: bold 16px/26px 'Roboto Condensed', sans-serif;
+  color: #f72210;
+  margin: 10px 0;
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+.mag-cat {
+  padding: 0 7px;
+  background-color: #f72210;
+  color: white;
+  margin-right: 7px;
+}
+
+.articleLink {
+  text-transform: initial;
+  margin-bottom: 30px;
+}
+
+.magazine .featureTitle a:hover {
+  text-decoration: underline;
+  text-decoration-color: #f72210;
 }
 
 
