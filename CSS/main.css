@@ -430,6 +430,7 @@ header {
 
 .see-all:hover {
   background-color: #dbdcdd;
+  text-decoration: none;
 }
 
 .mag-arrow {
@@ -822,6 +823,10 @@ header {
     font-size: 18px;
     line-height: 18px;
   }
+
+  .magazine .bottom {
+    padding-top: 30px;
+  }
   
   .menu li:not(.liLast) {
     border-right: 1px solid #d9d9d9;
@@ -962,6 +967,12 @@ header {
     height: 95px;
   }
 
+  .magazine .top-section .img-fluid,
+  .magazine .bottom .image .image-fluid {
+    max-height: 299px;
+    min-height: 206px;
+  }
+
 }
 
 /*? Extra large devices (large desktops, 1200px and up)--------------- */
@@ -969,5 +980,4 @@ header {
   .newsInfo a span {
     margin-bottom: 0;
   }
-
 }
