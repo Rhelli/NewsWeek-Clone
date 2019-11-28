@@ -379,6 +379,16 @@ header {
   z-index: 200;
 }
 
+/** MAGAZINE SECTION ------------------------------------------*/
+.magazine-section {
+  margin-top: 20px;
+}
+
+.magazine {
+  margin-bottom: 30px;
+  padding-top: 10px;
+}
+
 /** FEATURE SECTION -------------------------------------------*/
 .sectionPicks {
   margin: 0;
