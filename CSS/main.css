@@ -185,7 +185,7 @@ header {
   max-width: 1310px;
   padding: 15px;
   position: relative;
-  z-index: 2;
+  z-index: 200;
 }
 
 .header-date {
@@ -237,7 +237,7 @@ header {
   background-color: #f72210;
   position: absolute;
   transform: translate(-50%, 0);
-  z-index: 3;
+  z-index: 300 !important;
   top: 0;
   left: 50%;
   padding: 10px 15px;
@@ -981,7 +981,7 @@ header {
     margin-bottom: 0;
   }
 
-  .mag-preview .image {
+    .mag-preview .image {
     max-height: 299px;
   }
 }
