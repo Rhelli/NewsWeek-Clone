@@ -814,6 +814,10 @@ header {
 
 /*? Medium devices (tablets, 768px and up) ----------------------------*/
 @media(min-width: 768px) {
+  .mag-preview .image {
+    max-height: 230px;
+  }
+
   .featureArtTitle {
     font-size: 22px;
     line-height: 22px;
@@ -822,6 +826,10 @@ header {
   .magazine .featureArtTitle {
     font-size: 18px;
     line-height: 18px;
+  }
+
+  .see-all {
+    font-size: 17px !important;
   }
 
   .magazine .bottom {
@@ -952,8 +960,6 @@ header {
   .nav-item:hover .nav-link::after {
     background-color: #f72210 !important;
   }
-
-
 }
 
 /*? Large devices (desktops, 992px and up)---------------------------- */
@@ -967,17 +973,15 @@ header {
     height: 95px;
   }
 
-  .magazine .top-section .img-fluid,
-  .magazine .bottom .image .image-fluid {
-    max-height: 299px;
-    min-height: 206px;
-  }
-
 }
 
 /*? Extra large devices (large desktops, 1200px and up)--------------- */
 @media (min-width: 1200px) {
   .newsInfo a span {
     margin-bottom: 0;
+  }
+
+  .mag-preview .image {
+    max-height: 299px;
   }
 }
