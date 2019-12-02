@@ -29,6 +29,8 @@ body {
   height: 100%;
   width: 100%;
   overflow-x: hidden;
+  font: normal 12px/18px 'Roboto Condensed', sans-serif;
+  color: #333;
 }
 
 * {
@@ -105,8 +107,14 @@ body {
   margin-bottom: 25px;
 }
 
+.editorTitle {
+  font: bold 20px/20px 'Roboto Condensed', sans-serif;
+  margin-bottom: 10px;
+}
+
 .featureArtTitle a:hover,
-.articleLink a:hover {
+.articleLink a:hover,
+.editorTitle a:hover {
   text-decoration: underline;
   text-decoration-color: #f72210;
 }
@@ -515,7 +523,32 @@ header {
   line-height: 16px;
 }
 
+/** EDITORS PICKS SECTION --------------------------------------*/
+.editor-section .features article {
+  padding-bottom: 20px;
+}
 
+.editor-section .features .wrap {
+  position: relative;
+  min-height: 33px;
+  margin-bottom: 10px;
+}
+
+.editor-section .category {
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.editor-section .category a {
+  color: #f72210;
+  font-size: 17px;
+  text-decoration: none;
+}
+
+.editor-section .editorTitle a {
+  color: #000;
+}
 
 /** FEATURE SECTION -------------------------------------------*/
 .sectionPicks {
