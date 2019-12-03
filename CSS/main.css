@@ -524,6 +524,10 @@ header {
 }
 
 /** EDITORS PICKS SECTION --------------------------------------*/
+.editor-section {
+  margin-bottom: 20px;
+}
+
 .editor-section .features article {
   padding-bottom: 20px;
 }
@@ -555,6 +559,14 @@ header {
   color: #333;
   text-decoration: none;
   font-weight: 600;
+}
+
+.slideshow-section article {
+  padding-bottom: 40px;
+}
+
+.pic-gallery .row .image {
+  margin-bottom: 20px;
 }
 
 .slide-icon::after {
