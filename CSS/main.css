@@ -230,7 +230,8 @@ header {
   border: 0;
 }
 
-.header-buttons svg {
+.header-buttons svg,
+.signup svg {
   display: inline-block;
   enable-background: new 0 0 8 14;
   fill: #f72210;
@@ -393,6 +394,31 @@ header {
 #times {
   display: none;
   z-index: 200;
+}
+
+/** NEWSLETTER/SIGN UP SECTION --------------------------------*/
+.signup {
+  max-width: 300px; 
+  margin-bottom: 30px;
+  border: 1px solid #e5e5e5;
+  background-color: #f4f5f6;
+  padding: 20px;
+}
+
+.signup .btn {
+  font: bold 18px/18px 'Roboto Condensed', sans-serif;
+  color: #fff !important;
+  background-color: #666;
+  margin-bottom: 10px;
+}
+
+.signup .btn:hover {
+  background-color: #999;
+}
+
+.preferences {
+  color: #333;
+  font: bold 15px/15px 'Roboto Condensed', sans-serif;
 }
 
 /** MAGAZINE SECTION ------------------------------------------*/
