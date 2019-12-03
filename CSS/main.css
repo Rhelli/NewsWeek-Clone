@@ -1020,6 +1020,21 @@ header {
 
 /*? Medium devices (tablets, 768px and up) ----------------------------*/
 @media(min-width: 768px) {
+  .page-top {
+    height: 3149px;
+    position: relative;
+  }
+  
+  .fStory {
+    position: relative;
+    height: 1628px;
+  }
+
+  .top-right-content {
+    position: relative;
+    height: 3149px;
+  }
+  
   .mag-preview .image {
     max-height: 230px;
   }
