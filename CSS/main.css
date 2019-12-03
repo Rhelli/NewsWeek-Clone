@@ -436,6 +436,22 @@ header {
   border-top: 1px solid #ddd;
 }
 
+/** FEATURED STORIES SECTION ------------------------------------------*/
+.features article {
+  padding-bottom: 20px;
+}
+
+.features .wrap {
+  margin-bottom: 10px;
+  min-height: 33px;
+}
+
+.features .category {
+  bottom: 0;
+  left: 0;
+}
+
+
 /** CULTURE & TRAVEL SECTION ------------------------------------------*/
 .culture-story {
   background-color: #f4f5f6;
