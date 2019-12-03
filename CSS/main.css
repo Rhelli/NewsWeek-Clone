@@ -550,6 +550,36 @@ header {
   color: #000;
 }
 
+/** SLIDESHOW SECTION -----------------------------------------*/
+.pic-gallery .nTitle a {
+  color: #333;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.slide-icon::after {
+  border-bottom: 3px solid red;
+  border-right: 3px solid red;
+  display: block;
+  content: "";
+  width: 26px;
+  height: 25px;
+  position: absolute;
+  bottom: -4px;
+  right: -4px;
+}
+
+.link-count {
+  width: 70px;
+  height: 52px;
+  bottom: 0;
+  left: 0;
+  font: bold 20px/58px 'Roboto Condensed', sans-serif;
+  color: #e9212e !important;
+  background: url('../Assets/Img/slide-count.png') 0 0 / contain no-repeat;
+  text-indent: 5px;
+}
+
 /** FEATURE SECTION -------------------------------------------*/
 .sectionPicks {
   margin: 0;
