@@ -409,6 +409,10 @@ header {
   text-decoration: none;  
 }
 
+.top-story article {
+  padding-bottom: 20px;
+}
+
 .top-story .wrap {
   min-height: 33px;
   margin-bottom: 10px;
@@ -427,6 +431,10 @@ header {
   margin-bottom: 10px;
 }
 
+.more-top article {
+  padding: 14px 0;
+  border-top: 1px solid #ddd;
+}
 
 /**  OPINION SECTION ------------------------------------------*/
 .opinion a {
