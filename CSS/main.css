@@ -396,6 +396,26 @@ header {
   z-index: 200;
 }
 
+/** LATEST NEWS SECTION ---------------------------------------*/
+.latest-section {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.latest-section a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.latest {
+  margin-bottom: 30px;
+}
+
+.latest li {
+  padding: 10px 0;
+  border-top: 1px solid #ddd;
+}
+
 /** NEWSLETTER/SIGN UP SECTION --------------------------------*/
 .signup {
   max-width: 300px; 
