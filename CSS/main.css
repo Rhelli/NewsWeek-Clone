@@ -159,13 +159,13 @@ body {
 }
 
 .cultureText {
-  font: 15px/20px, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font: normal 15px/20px "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: rgba(39, 39, 39, 0.5);
   margin-bottom: 10px;
 }
 
 .tagsText {
-  font: 13px/20px 300 "Helvetica Neue", Arial, sans-serif;
+  font: normal 13px/20px "Helvetica Neue", Arial, sans-serif;
   color: #272727;
 }
 
@@ -434,6 +434,32 @@ header {
 .more-top article {
   padding: 14px 0;
   border-top: 1px solid #ddd;
+}
+
+/** CULTURE & TRAVEL SECTION ------------------------------------------*/
+.culture-story {
+  background-color: #f4f5f6;
+  margin-bottom: 20px;
+}
+
+.culture-story .featureTitle {
+  padding: 10px;
+  color: rgba(3, 3, 3, 0.5);
+}
+
+.culture-item .info {
+  padding: 15px 10px 20px;
+}
+
+.culture-item .tagsText a {
+  padding: 3px 6px;
+  margin: 0 6px 6px 0;
+  background-color: #c2d4d7;
+}
+
+.culture-item .tagsText a:hover {
+  background-color: #000;
+  color: #c2d4d7;
 }
 
 /**  OPINION SECTION ------------------------------------------*/
