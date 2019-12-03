@@ -141,6 +141,12 @@ body {
   z-index: 1;
 }
 
+.byline {
+  font: 14px/21px 'Roboto Condensed', sans-serif;
+  color: #555;
+  margin-top: 4px;
+}
+
 .bylineBold {
   font: bold 16px/100% "Roboto Condensed", sans-serif;
   color: #555;
