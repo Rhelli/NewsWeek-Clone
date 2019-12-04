@@ -3,6 +3,7 @@
 module.exports = {
   "extends": "stylelint-config-recommended",
   "rules": {
+    "no-descending-specificity": null,
     "at-rule-empty-line-before": [ "always", {
       except: [
         "blockless-after-same-name-blockless",
@@ -105,5 +106,5 @@ module.exports = {
     "value-list-comma-space-after": "always-single-line",
     "value-list-comma-space-before": "never",
     "value-list-max-empty-lines": 0,
-  }, ignore: ["selectors-within-list"],
+  },
 }
