@@ -1126,6 +1126,11 @@ header {
     justify-content: flex-end !important;
   }
 
+  .header-top {
+    position: fixed;
+    width: 100vw;
+  }
+
   .header-bottom {
     max-width: 220px;
     height: 100vh;
