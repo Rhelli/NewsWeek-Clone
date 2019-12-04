@@ -2,9 +2,7 @@
 
 module.exports = {
   "extends": "stylelint-config-recommended",
-  "plugins":["stylelint-prettier"],
   "rules": {
-    "prettier/prettier": true,
     "at-rule-empty-line-before": [ "always", {
       except: [
         "blockless-after-same-name-blockless",
