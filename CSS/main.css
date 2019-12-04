@@ -1128,7 +1128,7 @@ header {
 
   .header-top {
     position: fixed;
-    width: 100vw;
+    width: 105%;
   }
 
   .header-bottom {
@@ -1227,6 +1227,8 @@ header {
   
   .header-top {
     height: 95px;
+    margin-left: 0px;
+    margin-right:
   }
 
   .top-left-content {
@@ -1269,6 +1271,7 @@ header {
 
     .mag-preview .image {
     max-height: 299px;
+    overflow: hidden;
   }
 
   .top-left-content {

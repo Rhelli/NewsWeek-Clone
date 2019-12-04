@@ -5,8 +5,8 @@ const nav = document.getElementById('nav');
 const container = document.getElementById('navbarContainer');
 search.addEventListener("click", function (ev) {
   container.style.zIndex = "12";
-  search.style.width = "90%";
-  search.style.paddingLeft = "10px";
+  search.style.width = "91%";
+  search.style.paddingLeft = "5px";
   search.style.transition = "width 0.2s ease";
   ev.stopPropagation(); //this is important! If removed, you'll get both alerts
 });
