@@ -24,11 +24,15 @@
   }
 }
 
+@keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
 html,
 body {
   height: 100%;
   width: 100%;
-  overflow-x: hidden;
   font: normal 13px/18px 'Roboto Condensed', sans-serif;
   color: #333;
 }
@@ -62,6 +66,7 @@ body {
   padding-left: 15px;
   padding-right: 15px;
   padding-top: 20px;
+  margin-top: -5px;
   background-color: white;
 }
 
@@ -176,7 +181,8 @@ body {
 
 /** HEADER-----------------------------------------*/
 header {
-  width: 100%;
+  max-width: 1310px;
+  overflow: hidden;
 }
 
 .page-header {
@@ -279,8 +285,11 @@ header {
   height: 25px;
   width: 25px;
   padding: 0 35px 0 25px;
-  transform: scalex(1.2);
   cursor: pointer;
+}
+
+#bars {
+  transform: scaleX(1.2);
 }
 
 #mobNavIcon i {
@@ -300,6 +309,7 @@ header {
   padding: 15px 160px 15px 0;
   background-color: white !important;
   border-bottom: 2px solid #f4f5f6;
+  overflow: hidden;
 }
 
 .header-bottom > span::before {
@@ -350,6 +360,10 @@ header {
 
 .searchNav:focus::placeholder {
   color: transparent;
+}
+
+.searchNav::placeholder {
+  -webkit-animation: fadein 2s;
 }
 
 .searchNav:focus {
@@ -1115,8 +1129,9 @@ header {
   .header-bottom {
     max-width: 220px;
     height: 100vh;
-    position: absolute;
+    position: fixed;
     right: -220px;
+    top: 50px;
     padding: 0;
     margin: 0;
     overflow-y: scroll;
@@ -1239,8 +1254,6 @@ header {
   .top-right-content::-webkit-scrollbar {
     display: none;
   }
-
-
 }
 
 /*? Extra large devices (large desktops, 1200px and up)--------------- */
@@ -1256,11 +1269,6 @@ header {
   .top-left-content {
     overflow: hidden;
     height: 2033.2px;
-  }
-
-  .sticky4 {
-    scroll-snap-stop: always;
-    scroll-snap-align: start;
   }
 
   .fStory {
