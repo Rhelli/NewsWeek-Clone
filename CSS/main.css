@@ -1020,19 +1020,34 @@ header {
 
 /*? Medium devices (tablets, 768px and up) ----------------------------*/
 @media(min-width: 768px) {
-  .page-top {
-    height: 3149px;
+  .top-left-content {
     position: relative;
-  }
-  
-  .fStory {
-    position: relative;
-    height: 1628px;
+    height: 95vh;
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
   }
 
-  .top-right-content {
-    position: relative;
-    height: 3149px;
+  .top-left-content::-webkit-scrollbar {
+    display: none;
+  }
+
+  .sticky4 {
+    height: 1370px;
+    scroll-snap-stop: always;
+    scroll-snap-align: bottom;
+  }
+
+  .mStory {
+    height: 1370px;
+    overflow-y: scroll;
+  }
+
+  .mStory::-webkit-scrollbar {
+    display: none;
+  }
+
+  .culture-item {
+    flex: 0 1 47%;
   }
   
   .mag-preview .image {
