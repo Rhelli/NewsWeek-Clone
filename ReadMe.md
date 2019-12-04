@@ -22,14 +22,22 @@ The project's repo can be found [here](https://github.com/Rhelli/NewsWeek-Clone)
 
 ### ✨ [Link to Live Site](https://raw.githack.com/Rhelli/Next-Web-Responsive-Design/development/index.html)
 
-#### Large Animation
-<a href="/Assets/Img/animation-large.gif" target="_blank"> <img alt="page animation" src="/Assets/Img/animation-large.gif"/></a>
+****
+
+#### Full Screen Preview
+<a href="Assets/Img/large-screen.gif" target="_blank"> <img alt="page animation" src="Assets/Img/large-screen.gif"/></a>
+
+****
 
 #### Medium Animation
-<a href="/Assets/Img/animation-medium.gif" target="_blank"> <img alt="page animation" src="/Assets/Img/animation-medium.gif"/> </a>
+<a href="Assets/Img/medium-screen.gif" target="_blank"> <img alt="page animation" src="Assets/Img/medium-screen.gif"/> </a>
+
+****
 
 #### Small Animation
-<a href="/Assets/Img/animation-small.gif" target="_blank"> <img alt="page animation" src="/Assets/Img/animation-small.gif"/> </a>
+<a href="Assets/Img/small-screen.gif" target="_blank"> <img alt="page animation" src="Assets/Img/small-screen.gif"/> </a>
+
+****
 
 
 ### 🤝 Contributing
