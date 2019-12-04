@@ -1209,6 +1209,38 @@ header {
     height: 95px;
   }
 
+  .top-left-content {
+    position: relative;
+    height: 95vh;
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+  }
+
+  .top-left-content::-webkit-scrollbar {
+    display: none;
+  }
+
+  .sticky4 {
+    height: 1370px;
+    scroll-snap-stop: always;
+    scroll-snap-align: bottom;
+  }
+
+  .mStory::-webkit-scrollbar {
+    display: none;
+  }
+
+  .top-right-content {
+    height: 1370px;
+    position: relative;
+    overflow-y: scroll;
+  }
+
+  .top-right-content::-webkit-scrollbar {
+    display: none;
+  }
+
+
 }
 
 /*? Extra large devices (large desktops, 1200px and up)--------------- */
@@ -1219,5 +1251,28 @@ header {
 
     .mag-preview .image {
     max-height: 299px;
+  }
+
+  .top-left-content {
+    overflow: hidden;
+    height: 2033.2px;
+  }
+
+  .sticky4 {
+    scroll-snap-stop: always;
+    scroll-snap-align: start;
+  }
+
+  .fStory {
+    height: auto;
+  }
+
+  .mStory {
+    height: 2000px;
+    overflow-y: scroll;
+  }
+
+  .top-right-content {
+    height: auto;
   }
 }
