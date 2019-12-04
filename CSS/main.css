@@ -5,18 +5,21 @@
     transform: translateY(0);
     opacity: 1;
   }
+
   100% {
     -webkit-transform: translateY(-1000px);
     transform: translateY(-1000px);
     opacity: 0;
   }
 }
+
 @keyframes navSlide-Out {
   0% {
     -webkit-transform: translateY(0);
     transform: translateY(0);
     opacity: 1;
   }
+
   100% {
     -webkit-transform: translateY(-1000px);
     transform: translateY(-1000px);
@@ -28,6 +31,7 @@
   from {
     opacity: 0;
   }
+
   to {
     opacity: 1;
   }
@@ -183,7 +187,7 @@ body {
   color: inherit;
 }
 
-/** HEADER-----------------------------------------*/
+/* HEADER----------------------------------------- */
 header {
   max-width: 1310px;
   overflow: hidden;
@@ -379,8 +383,7 @@ header {
   position: absolute;
   right: 82px;
   top: 18px;
-  background: url("../Assets/Img/icon-search-glass.svg") center/contain
-    no-repeat white;
+  background: url("../Assets/Img/icon-search-glass.svg") center/contain no-repeat white;
   width: 20px;
   height: 20px;
   font-size: 0;
@@ -395,8 +398,7 @@ header {
 }
 
 .navSlideOut {
-  -webkit-animation: slide-out-left 0.5s cubic-bezier(0.55, 0.085, 0.68, 0.53)
-    both;
+  -webkit-animation: slide-out-left 0.5s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
   animation: slide-out-left 0.5s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
 }
 
@@ -422,7 +424,7 @@ header {
   z-index: 200;
 }
 
-/**  TOP-LEFT / MORE TOP STORIES SECTION ------------------------------------------*/
+/* TOP-LEFT / MORE TOP STORIES SECTION ------------------------------------------ */
 .top-left-content a {
   color: inherit;
   text-decoration: none;
@@ -455,7 +457,7 @@ header {
   border-top: 1px solid #ddd;
 }
 
-/** FEATURED STORIES SECTION ------------------------------------------*/
+/* FEATURED STORIES SECTION ------------------------------------------ */
 .features article {
   padding-bottom: 20px;
 }
@@ -470,7 +472,7 @@ header {
   left: 0;
 }
 
-/** CULTURE & TRAVEL SECTION ------------------------------------------*/
+/* CULTURE & TRAVEL SECTION ------------------------------------------ */
 .culture-story {
   background-color: #f4f5f6;
   margin-bottom: 20px;
@@ -496,13 +498,13 @@ header {
   color: #c2d4d7;
 }
 
-/**  OPINION SECTION ------------------------------------------*/
+/* OPINION SECTION ------------------------------------------ */
 .opinion a {
   color: inherit;
   text-decoration: none;
 }
 
-/** LATEST NEWS SECTION ---------------------------------------*/
+/* LATEST NEWS SECTION --------------------------------------- */
 .latest-section a {
   color: inherit;
   text-decoration: none;
@@ -519,7 +521,7 @@ header {
   border-top: 1px solid #ddd;
 }
 
-/** NEWSLETTER/SIGN UP SECTION --------------------------------*/
+/* NEWSLETTER/SIGN UP SECTION -------------------------------- */
 .signup {
   max-width: 300px;
   margin-bottom: 30px;
@@ -544,7 +546,7 @@ header {
   font: bold 15px/15px "Roboto Condensed", sans-serif;
 }
 
-/** MAGAZINE SECTION ------------------------------------------*/
+/* MAGAZINE SECTION ------------------------------------------ */
 .magazine-section {
   margin-top: 20px;
 }
@@ -672,7 +674,7 @@ header {
   line-height: 16px;
 }
 
-/** EDITORS PICKS SECTION --------------------------------------*/
+/* EDITORS PICKS SECTION -------------------------------------- */
 .editor-section {
   margin-bottom: 20px;
 }
@@ -703,7 +705,7 @@ header {
   color: #000;
 }
 
-/** SLIDESHOW SECTION -----------------------------------------*/
+/* SLIDESHOW SECTION ----------------------------------------- */
 .pic-gallery .nTitle a {
   color: #333;
   text-decoration: none;
@@ -741,7 +743,7 @@ header {
   text-indent: 5px;
 }
 
-/** FEATURE SECTION -------------------------------------------*/
+/* FEATURE SECTION ------------------------------------------- */
 .sectionPicks {
   margin: 0;
 }
@@ -998,8 +1000,7 @@ header {
   color: #666;
 }
 
-/* MEDIA QUERIES ------------------------------*/
-/*? Small devices ----------------------------------------------------*/
+/* Small devices ---------------------------------------------------- */
 @media (max-width: 480px) {
   .mq-masthead {
     padding-left: 0;
@@ -1024,17 +1025,18 @@ header {
   }
 }
 
-/*? Medium devices (tablets, 576px and up) ----------------------------*/
+/* Medium devices (tablets, 576px and up) ---------------------------- */
 @media (max-width: 767px) and (min-width: 481px) {
   .subImages {
     width: 258px;
   }
+
   .newsletter .images {
     height: 161px;
   }
 }
 
-/*? Medium devices (tablets, 768px and up) ----------------------------*/
+/* Medium devices (tablets, 768px and up) ---------------------------- */
 @media (min-width: 768px) {
   .top-left-content {
     position: relative;
@@ -1115,7 +1117,7 @@ header {
   }
 }
 
-/*? Medium devices (tablets, 992px and under) ----------------------------*/
+/* Medium devices (tablets, 992px and under) ---------------------------- */
 @media (max-width: 992px) {
   .page-header,
   .page-header > .container {
@@ -1219,7 +1221,7 @@ header {
   }
 }
 
-/*? Large devices (desktops, 992px and up)---------------------------- */
+/* Large devices (desktops, 992px and up)---------------------------- */
 @media (min-width: 992px) {
   .body-container {
     padding-left: 30px;
@@ -1228,8 +1230,7 @@ header {
 
   .header-top {
     height: 95px;
-    margin-left: 0px;
-    margin-right: ;
+    margin-left: 0;
   }
 
   .top-left-content {
@@ -1264,7 +1265,7 @@ header {
   }
 }
 
-/*? Extra large devices (large desktops, 1200px and up)--------------- */
+/* Extra large devices (large desktops, 1200px and up)--------------- */
 @media (min-width: 1200px) {
   .newsInfo a span {
     margin-bottom: 0;
