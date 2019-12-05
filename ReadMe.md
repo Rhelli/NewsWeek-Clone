@@ -20,7 +20,7 @@ The assignment can be found in the Odin Project's HTML and CSS course [here.](ht
 
 The project's repo can be found [here](https://github.com/Rhelli/NewsWeek-Clone)
 
-### ✨ [Link to Live Site](https://raw.githack.com/Rhelli/NewsWeek-Clone/development/index.htmll)
+### ✨ [Link to Live Site](https://raw.githack.com/Rhelli/NewsWeek-Clone/master/index.html)
 
 ****
 
