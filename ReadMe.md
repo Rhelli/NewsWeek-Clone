@@ -20,22 +20,22 @@ The assignment can be found in the Odin Project's HTML and CSS course [here.](ht
 
 The project's repo can be found [here](https://github.com/Rhelli/NewsWeek-Clone)
 
-### ✨ [Link to Live Site](https://raw.githack.com/Rhelli/Next-Web-Responsive-Design/development/index.html)
+### ✨ [Link to Live Site](https://raw.githack.com/Rhelli/NewsWeek-Clone/development/index.htmll)
 
 ****
 
 #### Full Screen Preview
-<a href="Assets/Img/large-screen.gif" target="_blank"> <img alt="page animation" src="Assets/Img/large-screen.gif"/></a>
+<a style="text-align:center" href="Assets/Img/large-screen.gif" target="_blank"> <img alt="page animation" src="Assets/Img/large-screen.gif"/></a>
 
 ****
 
 #### Medium Animation
-<a href="Assets/Img/medium-screen.gif" target="_blank"> <img alt="page animation" src="Assets/Img/medium-screen.gif"/> </a>
+<a style="text-align:center" href="Assets/Img/medium-screen.gif" target="_blank"> <img alt="page animation" src="Assets/Img/medium-screen.gif"/> </a>
 
 ****
 
 #### Small Animation
-<a href="Assets/Img/small-screen.gif" target="_blank"> <img alt="page animation" src="Assets/Img/small-screen.gif"/> </a>
+<a style="text-align:center" href="Assets/Img/small-screen.gif" target="_blank"> <img alt="page animation" src="Assets/Img/small-screen.gif"/> </a>
 
 ****
 
